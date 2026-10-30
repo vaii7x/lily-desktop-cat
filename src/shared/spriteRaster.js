@@ -8,9 +8,10 @@
 
   // '.' transparent, O outline, B base, S stripe, P peach, W white, N nose, E iris,
   // K pupil, H shine, I inner ear, T tail dark, M whisker, X shadow,
-  // L/G/D light/mid/dark grey for the typing keys, A water blue for the reminder icon (same in every coat)
-  const ROLES = '.OBSPWNEKHITMXLGDA';
-  const FIXED = { L: '#d8d5dc', G: '#a29daa', D: '#6e6876', A: '#4f9fe0' };
+  // L/G/D light/mid/dark grey for the typing keys, A water blue for the reminder icon, R headphone pink
+  // (same in every coat)
+  const ROLES = '.OBSPWNEKHITMXLGDAR';
+  const FIXED = { L: '#d8d5dc', G: '#a29daa', D: '#6e6876', A: '#4f9fe0', R: '#e0607e' };
   const HEX = /^#[0-9a-f]{6}([0-9a-f]{2})?$/i;
 
   function parseHex(hex) {

@@ -170,6 +170,7 @@
       if (celebration && now >= celebration.until) celebration = null;
       // Typing doesn't get her up once she's lying down (user request, Phase 3).
       const typing = lyingDown() ? null : world.typing;
+      const music = !lyingDown() && world.music === true; // a nap isn't interrupted for a song either
 
       // Perching: with nothing under her she falls to the surface below, lands, then carries on with what she
       // was doing. Only being held stops it.
@@ -187,7 +188,7 @@
       if (now < landUntil && !dragged) return { anim: 'land', flip, move: null };
 
       const top = R.topState({
-        dragged, celebrate: celebration !== null, nudge: now < nudgeUntil, pet: loving || now < petUntil, typing,
+        dragged, celebrate: celebration !== null, nudge: now < nudgeUntil, pet: loving || now < petUntil, typing, music,
       });
       if (top === 'celebrate') {
         walking = false;
@@ -198,7 +199,7 @@
         walking = false;
         speed = 0;
         const leading = lead !== null && now < lead.until;
-        const anim = { dragged: 'dragged_limp', nudge: leading ? lead.anim : 'watch', pet: R.petPose(pose) }[top]
+        const anim = { dragged: 'dragged_limp', nudge: leading ? lead.anim : 'watch', pet: R.petPose(pose), music: 'vibe' }[top]
           || (typing === 'steam' ? 'type_fast_steam' : 'type_knead');
         const frame = top === 'nudge' && !leading ? 4 : top === 'typing' ? R.kneadFrame(world.presses || 0) : undefined;
         return { anim, flip, frame, move: null };

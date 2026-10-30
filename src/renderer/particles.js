@@ -2,8 +2,8 @@
 (function () {
   'use strict';
   const LIFE_MS = 1200;
-  const RISE = { heart: 22, sparkle: 12, steam: 14 }; // sprite px over a lifetime
-  const DRIFT = { heart: 0, sparkle: 0, steam: 6 }; // steam drifts away from her head
+  const RISE = { heart: 22, sparkle: 12, steam: 14, note: 18 }; // sprite px over a lifetime
+  const DRIFT = { heart: 0, sparkle: 0, steam: 6, note: 5 }; // steam drifts away from her head
 
   function create(sprites, look, scale, bubbleRoom) {
     let list = []; // {x, y0 (sprite px), born (ms, may be in the future for staggered ones), kind}

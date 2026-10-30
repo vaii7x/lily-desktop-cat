@@ -14,6 +14,7 @@ const DEFAULTS = {
   perchOnWindows: false,
   hideInFullscreen: true,
   reduceMotion: false, // fewer bouncy animations and effects
+  musicReactions: true, // headphones on while the PC plays sound (reads the output level only)
   coat: { preset: 'calico_tabby', eyes: 'yellow_green' },
   startWithWindows: false,
   thresholds: { hopAwayMin: 2, breakAwayMin: 5, zoomiesAwayMin: 20 },

@@ -19,7 +19,7 @@
   const LOVE_HEART_MS = 700; // a new heart this often while she is being hovered
   const HEAD_ROWS = 32; // top 32 sprite rows of the cat = her head and chin in sitting poses
   const HOVER_SLACK = 4 * scale; // the cursor counts as on her within this many px of her outline
-  const FX_MS = { party: 350, steam: 300 }; // how often a sparkle/heart or steam puff appears
+  const FX_MS = { party: 350, steam: 300, note: 900 }; // how often a sparkle/heart or steam puff appears
   const FOCUS = { work: 'focus time', short: 'break time!', long: 'long break!' };
   const NUDGE = { tired: ['take a break?', 5000], overworked: ['break time!!', 7000] };
 
@@ -35,6 +35,7 @@
   let tag = null; // timer / focus countdown over her head
   let quiet = false; // Focus Mode work phase
   let reduceMotion = false; // setting: no sparkles, steam or keyboard shake
+  let music = false; // headphones stay on while she types over a song
   let nextMeow = performance.now() + R.meowGapMs(Math.random);
 
   function setLoving(v) {
@@ -61,6 +62,7 @@
     tag = world.tag || null;
     quiet = world.quiet === true;
     reduceMotion = world.reduceMotion === true;
+    music = world.music === true;
     const out = behavior.tick(now, world);
     meow(now);
     effects(out.anim, now);
@@ -86,10 +88,11 @@
   // Sparkles and hearts while she celebrates, steam puffs off her head while you type fast.
   function effects(anim, now) {
     if (reduceMotion) return;
-    const kind = behavior.celebrating ? 'party' : anim === 'type_fast_steam' ? 'steam' : null;
+    const kind = behavior.celebrating ? 'party' : { type_fast_steam: 'steam', vibe: 'note' }[anim] || null;
     if (!kind || now - lastFx < FX_MS[kind]) return;
     lastFx = now;
     if (kind === 'steam') particles.add(Math.random() < 0.5 ? 10 : 32, now, bubbleRoom + 8, 'steam');
+    else if (kind === 'note') particles.add(Math.random() < 0.5 ? 6 : 36, now, bubbleRoom + 10, 'note');
     else particles.add(8 + Math.floor(Math.random() * 30), now, heartY(), Math.random() < 0.5 ? 'heart' : 'sparkle');
   }
 
@@ -125,6 +128,11 @@
       ctx.fillStyle = 'rgba(255, 40, 40, 0.28)';
       ctx.fillRect(0, catTop, S * scale, S * scale);
       ctx.globalCompositeOperation = 'source-over';
+    }
+    if (music && R.TYPE_ANIMS.has(animator.name)) {
+      const img = sprites.fx('headphones', look);
+      const x = animator.flip ? S - R.HEADPHONES.x - img.width : R.HEADPHONES.x; // mirrored poses mirror her head
+      ctx.drawImage(img, x * scale, catTop + R.HEADPHONES.y * scale, img.width * scale, img.height * scale);
     }
     drawKeys(now);
     particles.draw(ctx, now);

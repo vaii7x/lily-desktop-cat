@@ -12,6 +12,8 @@ test('higher states interrupt lower ones', () => {
   assert.equal(R.topState({ pet: true }), 'pet');
   assert.equal(R.topState({ pet: true, dragged: true }), 'dragged');
   assert.equal(R.topState({ typing: true, celebrate: true }), 'celebrate');
+  assert.equal(R.topState({ music: true, typing: true }), 'typing'); // typing over a song, then back to vibing
+  assert.equal(R.topState({ music: true, pet: true }), 'pet');
 });
 
 test('petting keeps her pose: lying down she purrs lying down', () => {

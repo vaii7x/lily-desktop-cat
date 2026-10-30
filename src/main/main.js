@@ -8,6 +8,7 @@ const idle = require('./idle');
 const timers = require('./timers');
 const menu = require('./menu');
 const claudeHook = require('./claudeHook');
+const audioMeter = require('./audioMeter');
 
 if (!app.requestSingleInstanceLock()) {
   app.quit();
@@ -28,6 +29,7 @@ if (!app.requestSingleInstanceLock()) {
     idle.start(toCat, timers.quiet);
     timers.start(toCat, idle.away);
     claudeHook.start(toCat);
+    audioMeter.start();
   });
 }
 

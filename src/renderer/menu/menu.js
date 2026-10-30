@@ -97,6 +97,9 @@
     $('startWithWindows').checked = state.startWithWindows;
     $('alwaysOnTop').checked = state.alwaysOnTop;
     $('reduceMotion').checked = state.reduceMotion;
+    $('musicReactions').checked = state.musicReactions;
+    $('musicReactions').disabled = !state.audio;
+    $('audioMsg').textContent = state.audio ? '' : 'sound level unavailable';
     for (const k of ['perchOnWindows', 'hideInFullscreen']) {
       $(k).checked = state[k];
       $(k).disabled = !state.tracking;
@@ -177,6 +180,7 @@
   $('startWithWindows').addEventListener('change', (e) => act('startWithWindows', e.target.checked));
   $('alwaysOnTop').addEventListener('change', (e) => act('alwaysOnTop', e.target.checked));
   $('reduceMotion').addEventListener('change', (e) => act('reduceMotion', e.target.checked));
+  $('musicReactions').addEventListener('change', (e) => act('musicReactions', e.target.checked));
   $('perchOnWindows').addEventListener('change', (e) => act('perchOnWindows', e.target.checked));
   $('hideInFullscreen').addEventListener('change', (e) => act('hideInFullscreen', e.target.checked));
   $('claudeHook').addEventListener('change', (e) => act('claudeHook', e.target.checked));

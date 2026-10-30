@@ -8,7 +8,7 @@
   'use strict';
 
   // Higher interrupts lower.
-  const PRIORITY = ['dragged', 'celebrate', 'nudge', 'pet', 'typing', 'mood', 'move'];
+  const PRIORITY = ['dragged', 'celebrate', 'nudge', 'pet', 'typing', 'music', 'mood', 'move'];
   const FOLLOW_STOP = 80; // she sits this far from the cursor
   const FOLLOW_GO = 50; // ...and gets up once her spot is this far away (hysteresis: no jitter at rest)
   const ACCEL = 400; // DIP/s^2, for smooth starts and stops
@@ -112,6 +112,8 @@
   const KEYBOARD = { x: 8, y: 38 };
   const PAWS = { left: { x: 18, down: 36, up: 33 }, right: { x: 23, down: 36, up: 33 } };
   const TYPE_ANIMS = new Set(['type_knead', 'type_fast_steam']);
+  // Headphones over a typing pose while music plays (user request): typing head at (12,6), fx sprite incl. outline.
+  const HEADPHONES = { x: 9, y: 7 };
   const KEY_POP_MS = 150; // the keyboard slides up this fast when typing starts...
   const KEY_POP_PX = 4; // ...from this far below
   const KEY_FADE_MS = 300; // and fade out this fast once she stops (1.5 s after the last press)
@@ -159,6 +161,6 @@
     PRIORITY, FOLLOW_STOP, FOLLOW_GO, WATCH_NEAR, WATCH_FAR,
     topState, petPose, clampPoint, followSpot, shouldWalk, steer, watchFrame, ACTIVITIES,
     pickActivity, LIVELY, lookFrame, awakeMs, napMs, pickRoam, MOOD_ACTIVITIES, typingLevel, zoomiesStep,
-    KEYBOARD, PAWS, TYPE_ANIMS, KEY_FADE_MS, kneadFrame, keyLayer, meowGapMs, meowText,
+    KEYBOARD, PAWS, TYPE_ANIMS, HEADPHONES, KEY_FADE_MS, kneadFrame, keyLayer, meowGapMs, meowText,
   };
 });

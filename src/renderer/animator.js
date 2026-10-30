@@ -23,7 +23,7 @@
       return sprites.frame(name, i, look, flip);
     }
 
-    return { set, frame, get name() { return name; }, get frameIndex() { return hold; } };
+    return { set, frame, get name() { return name; }, get frameIndex() { return hold; }, get flip() { return flip; } };
   }
 
   window.LilyAnimator = { create };

@@ -23,6 +23,7 @@ No admin password is needed.
 ## What she does
 
 - Sits where you put her, watches your cursor, grooms, pounces, chases her tail and naps now and then.
+- Puts on headphones and vibes when you play music (she only hears how loud it is, never the audio itself).
 - Kneads a little keyboard while you type, gets sleepy if you work for hours, and jumps for joy when you come back from a break.
 - **Click** her to pet her. **Drag** her anywhere. **Double-click** or **right-click** her for the menu:
   timer, reminders, focus mode, coat colours, size and settings.

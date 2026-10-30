@@ -1,0 +1,26 @@
+# Vibing to music with her headphones on: eyes shut, head bobbing and swaying to the beat, tail swishing.
+anim vibe 6
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_happy 15 15
+  fx_headphones 10 9
+frame
+  tail_sit_b 31 28
+  body_sit 11 25
+  head_front 13 8
+  eyes_happy 16 16
+  fx_headphones 11 10
+frame
+  tail_sit_c 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_happy 15 15
+  fx_headphones 10 9
+frame
+  tail_sit_b 31 28
+  body_sit 11 25
+  head_front 11 8
+  eyes_happy 14 16
+  fx_headphones 9 10

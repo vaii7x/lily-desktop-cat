@@ -1,0 +1,24 @@
+# Music reactions: headphones over her head (band between the ears, cups on the sides of her head), and a note.
+# Placed at head + (-2, +2); also an fx sprite, drawn over the typing poses while music plays. R = headphone pink, D = dark grey (fixed in every coat).
+
+@fx_headphones
+....DDDDDDDDDDDDDDDDDD....
+...DD................DD...
+..DD..................DD..
+..D....................D..
+..D....................D..
+.RRR..................RRR.
+RRRD..................DRRR
+RRRD..................DRRR
+RRRD..................DRRR
+RRRD..................DRRR
+.RRR..................RRR.
+
+@fx_note
+..RR.
+..RRR
+..R.R
+..R..
+RRR..
+RRR..
+.R...

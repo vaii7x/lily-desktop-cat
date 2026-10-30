@@ -12,6 +12,7 @@ const { SPEED: MOOD_SPEED } = require('../shared/moodTiers');
 const { clampPosition, nearestArea, positionRange, defaultPosition, opaqueBounds } = require('../shared/placement');
 const { surfaces, groundAt, coveredDisplay } = require('../shared/perch');
 const tracker = require('./winTracker');
+const audioMeter = require('./audioMeter');
 
 let catWin = null;
 let dragTimer = null;
@@ -189,6 +190,7 @@ ipcMain.handle('cat-world', (e) => {
     tag: timers.tag(), // countdown over her head
     quiet: timers.quiet(), // Focus Mode work phase
     reduceMotion: settings.get().reduceMotion,
+    music: audioMeter.listening(), // sound has been playing a while: headphones on
   };
 });
 

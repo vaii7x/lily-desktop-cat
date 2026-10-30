@@ -9,6 +9,7 @@ const idle = require('./idle');
 const tray = require('./tray');
 const claudeHook = require('./claudeHook');
 const tracker = require('./winTracker');
+const audioMeter = require('./audioMeter');
 const { besidePosition } = require('../shared/placement');
 const { intIn } = require('../shared/scheduler');
 
@@ -53,6 +54,7 @@ function state() {
     followMode: s.followMode, coat: s.coat, scale: s.scale, alwaysOnTop: s.alwaysOnTop, startWithWindows: s.startWithWindows,
     thresholds: s.thresholds, focus: s.focus, reminders: s.reminders, claudeHook: claudeHook.status(),
     perchOnWindows: s.perchOnWindows, hideInFullscreen: s.hideInFullscreen, reduceMotion: s.reduceMotion, tracking: tracker.available,
+    musicReactions: s.musicReactions, audio: audioMeter.available,
     // swatch colours: fur, patch and white for coats; the iris for eyes
     coats: Object.fromEntries(Object.entries(windows.sprites.coats).map(([k, c]) => [k, [c.B, c.P, c.W]])),
     eyes: windows.sprites.eyes,
@@ -92,6 +94,7 @@ const actions = {
   perchOnWindows: (on) => settings.set({ perchOnWindows: on === true }),
   hideInFullscreen: (on) => settings.set({ hideInFullscreen: on === true }),
   reduceMotion: (on) => settings.set({ reduceMotion: on === true }),
+  musicReactions: (on) => settings.set({ musicReactions: on === true }),
   hide() {
     windows.cat().hide();
     menuWin.close();
