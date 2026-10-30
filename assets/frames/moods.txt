@@ -1,0 +1,80 @@
+# Typing reactions and work-time moods (Phase 4). Head at (12,7) as in sit.txt; eyes at head + (3,8).
+
+# Typing: she sits behind two keys with her front paws on them. Layers at runtime: these frames, then the
+# keys (fx key_up / key_down), then her paws (fx paw_key) — positions in KEYS / PAWS in behaviorRules.js.
+# Frame 0: left paw presses, frame 1: right paw presses. Picked per real key press, not by fps.
+anim type_knead 1 noloop
+frame
+  tail_sit_a 31 27
+  body_sit 11 24
+  head_front 12 6
+  eyes_happy 15 14
+frame
+  tail_sit_b 31 27
+  body_sit 11 24
+  head_front 12 6
+  eyes_happy 15 14
+
+# typing fast: same, eyes squeezed shut; the red tint, steam and key shake are added at runtime
+anim type_fast_steam 1 noloop
+frame
+  tail_sit_a 31 27
+  body_sit 11 24
+  head_front 12 6
+  eyes_squint 15 14
+frame
+  tail_sit_c 31 27
+  body_sit 11 24
+  head_front 12 6
+  eyes_squint 15 14
+
+# a slow, friendly blink
+anim slow_blink 4 noloop
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_open 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_half 15 15
+frame
+  tail_sit_b 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_closed 15 15
+frame
+  tail_sit_b 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_half 15 15
+
+# tired: ears flat, head low, heavy lids
+anim idle_sit_droopy 2
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_droopy 12 8
+  eyes_half 15 16
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_droopy 12 8
+  eyes_closed 15 16
+
+# overworked: lying down, ears flat, glaring
+anim loaf_grumpy 2
+frame
+  body_loaf 3 32
+  tail_loaf_a 4 44
+  head_droopy 22 22
+  eyes_grumpy 25 30
+  paws_loaf 28 39
+frame
+  body_loaf 3 32
+  tail_loaf_b 4 43
+  head_droopy 22 22
+  eyes_grumpy 25 30
+  paws_loaf 28 39

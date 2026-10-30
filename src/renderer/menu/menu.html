@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'">
+  <title>Lily</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <header><strong>Lily</strong><span id="status" aria-live="polite"></span></header>
+
+  <details name="sec" open>
+    <summary>Follow mode</summary>
+    <div class="chips" role="radiogroup" aria-label="Follow mode">
+      <label><input type="radio" name="follow" value="stay"><span>Stay</span></label>
+      <label><input type="radio" name="follow" value="follow"><span>Follow</span></label>
+      <label><input type="radio" name="follow" value="roam"><span>Roam</span></label>
+    </div>
+  </details>
+
+  <details name="sec">
+    <summary>Timer <span class="tag" id="timerTag"></span></summary>
+    <form class="row" id="timerOff">
+      <div class="wheel" id="timerWheel" aria-label="Timer minutes"></div> min
+      <button type="submit">Start</button>
+    </form>
+    <div class="row" id="timerOn" hidden>
+      <span class="big" id="timerLeft"></span>
+      <button id="timerPause">Pause</button><button id="timerCancel">Cancel</button>
+    </div>
+  </details>
+
+  <details name="sec">
+    <summary>Reminders <span class="tag" id="remTag"></span></summary>
+    <ul id="remList"></ul>
+    <form id="remForm">
+      <input type="text" id="remText" maxlength="24" placeholder="what should she say?" aria-label="Reminder text" required>
+      <div class="row">
+        <div class="chips" role="radiogroup" aria-label="How often">
+          <label><input type="radio" name="remRepeat" value="repeat" checked><span>every</span></label>
+          <label><input type="radio" name="remRepeat" value="once"><span>once in</span></label>
+        </div>
+        <div class="wheel" id="remWheel" aria-label="Reminder minutes"></div> min
+        <button type="submit">Add</button>
+      </div>
+    </form>
+  </details>
+
+  <details name="sec">
+    <summary>Focus mode <span class="tag" id="focusTag"></span></summary>
+    <div id="focusOff">
+      <p class="hint">Work, then a short break, on repeat. She stays quiet while you work.</p>
+      <div class="chips presets" role="radiogroup" aria-label="Focus length">
+        <label><input type="radio" name="focusPreset" value="25"><span><b>25</b> min work<br>5 min break</span></label>
+        <label><input type="radio" name="focusPreset" value="50"><span><b>50</b> min work<br>10 min break</span></label>
+        <label><input type="radio" name="focusPreset" value="90"><span><b>90</b> min work<br>20 min break</span></label>
+      </div>
+      <div class="row"><button class="go" id="focusStart">Start focus</button></div>
+    </div>
+    <div id="focusOn" hidden>
+      <p class="phase" id="focusPhase"></p>
+      <div class="row"><span class="big" id="focusLeft"></span><button id="focusStop">Stop</button></div>
+      <p class="hint" id="focusCount"></p>
+    </div>
+  </details>
+
+  <details name="sec" id="look">
+    <summary>Look</summary>
+    <p class="label">Coat</p>
+    <div class="chips swatches" role="radiogroup" aria-label="Coat" id="coats"></div>
+    <p class="label">Eyes</p>
+    <div class="chips swatches" role="radiogroup" aria-label="Eye colour" id="eyes"></div>
+    <p class="label">Size</p>
+    <div class="chips" role="radiogroup" aria-label="Size">
+      <label><input type="radio" name="scale" value="2"><span>2x</span></label>
+      <label><input type="radio" name="scale" value="3"><span>3x</span></label>
+      <label><input type="radio" name="scale" value="4"><span>4x</span></label>
+    </div>
+  </details>
+
+  <details name="sec">
+    <summary>Settings</summary>
+    <label class="check"><input type="checkbox" id="startWithWindows"> Start with Windows</label>
+    <label class="check"><input type="checkbox" id="alwaysOnTop"> Always on top</label>
+    <label class="check"><input type="checkbox" id="reduceMotion"> Reduce motion</label>
+    <label class="check"><input type="checkbox" id="perchOnWindows" aria-describedby="trackMsg"> Perch on windows</label>
+    <label class="check"><input type="checkbox" id="hideInFullscreen" aria-describedby="trackMsg"> Hide over fullscreen apps</label>
+    <p class="hint indent" id="trackMsg"></p>
+    <label class="check"><input type="checkbox" id="claudeHook" aria-describedby="hookMsg"> React to Claude Code</label>
+    <p class="hint indent" id="hookMsg" aria-live="polite"></p>
+    <p class="label">Away detection (minutes idle)</p>
+    <form id="thrForm">
+      <div class="grid">
+        <label>Hop <input type="number" id="hopAwayMin" min="1" max="600"></label>
+        <label>Break <input type="number" id="breakAwayMin" min="1" max="600"></label>
+        <label>Zoomies <input type="number" id="zoomiesAwayMin" min="1" max="600"></label>
+      </div>
+      <div class="row"><button type="submit">Save</button><span class="hint" id="thrMsg" aria-live="polite"></span></div>
+    </form>
+  </details>
+
+  <footer class="row"><button id="hide">Hide</button><button id="quit">Quit</button></footer>
+  <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+# Things she does on her own between rests. Head at (12,7) as in sit.txt; eyes at head + (3,8).
+
+# licking a raised front paw, head dipped toward it
+anim groom 4
+frame
+  tail_sit_a 31 28
+  body_groom 11 25
+  head_front 12 8
+  eyes_closed 15 16
+  paw_lick 15 20
+frame
+  tail_sit_b 31 28
+  body_groom 11 25
+  head_front 12 8
+  eyes_closed 15 16
+  paw_lick 15 19
+  tongue 20 22
+frame
+  tail_sit_a 31 28
+  body_groom 11 25
+  head_front 12 8
+  eyes_closed 15 16
+  paw_lick 15 20
+frame
+  tail_sit_c 31 28
+  body_groom 11 25
+  head_front 12 8
+  eyes_closed 15 16
+  paw_lick 15 18
+  tongue 20 22
+
+# big yawn: head tips up, mouth opens wide, then settles
+anim yawn 5 noloop
+frame
+  tail_sit_a 31 28
+  body_groom 11 25
+  head_front 12 7
+  eyes_half 15 15
+frame
+  tail_sit_a 31 28
+  body_groom 11 25
+  head_yawn 12 7
+  eyes_closed 15 15
+frame
+  tail_sit_b 31 28
+  body_groom 11 25
+  head_yawn 12 6
+  eyes_closed 15 14
+frame
+  tail_sit_b 31 28
+  body_groom 11 25
+  head_yawn 12 6
+  eyes_closed 15 14
+frame
+  tail_sit_a 31 28
+  body_groom 11 25
+  head_yawn 12 7
+  eyes_closed 15 15
+frame
+  tail_sit_a 31 28
+  body_groom 11 25
+  head_front 12 7
+  eyes_half 15 15
+
+# big stretch, seen from the side: front legs reach forward, chest down, rear and tail up, then back up
+anim stretch 4 noloop
+frame
+  tail_walk_a 3 17
+  leg_s 32 37
+  leg_s 12 37
+  body_walk 6 28
+  leg_s 29 37
+  leg_s 9 37
+  head_turn 24 12
+  eyes_open 29 20
+frame
+  tail_walk_a 3 15
+  leg_f 32 37
+  leg_s 12 37
+  body_lean 6 27
+  leg_f 29 37
+  leg_s 9 37
+  head_turn 24 16
+  eyes_half 29 24
+frame
+  tail_walk_a 3 12
+  leg_reach 33 43
+  leg_s 12 37
+  body_stretch 6 26
+  leg_s 9 37
+  leg_reach 37 43
+  head_turn 25 22
+  eyes_half 30 30
+frame
+  tail_walk_b 3 12
+  leg_reach 33 43
+  leg_s 12 37
+  body_stretch 6 26
+  leg_s 9 37
+  leg_reach 37 43
+  head_turn 25 22
+  eyes_closed 30 30
+frame
+  tail_walk_a 3 12
+  leg_reach 33 43
+  leg_s 12 37
+  body_stretch 6 26
+  leg_s 9 37
+  leg_reach 37 43
+  head_turn 25 22
+  eyes_closed 30 30
+frame
+  tail_walk_b 3 12
+  leg_reach 33 43
+  leg_s 12 37
+  body_stretch 6 26
+  leg_s 9 37
+  leg_reach 37 43
+  head_turn 25 22
+  eyes_closed 30 30
+frame
+  tail_walk_a 3 15
+  leg_f 32 37
+  leg_s 12 37
+  body_lean 6 27
+  leg_f 29 37
+  leg_s 9 37
+  head_turn 24 16
+  eyes_half 29 24
+frame
+  tail_walk_a 3 17
+  leg_s 32 37
+  leg_s 12 37
+  body_walk 6 28
+  leg_s 29 37
+  leg_s 9 37
+  head_turn 24 12
+  eyes_open 29 20
+
+# reminder stretch: the front stretch, then a back-leg stretch, eyes shut in bliss
+anim stretch_big 6 noloop
+frame
+  tail_walk_a 3 15
+  leg_f 32 37
+  leg_s 12 37
+  body_lean 6 27
+  leg_f 29 37
+  leg_s 9 37
+  head_turn 24 16
+  eyes_half 29 24
+frame
+  tail_walk_a 3 12
+  leg_reach 33 43
+  leg_s 12 37
+  body_stretch 6 26
+  leg_s 9 37
+  leg_reach 37 43
+  head_turn 25 22
+  eyes_closed 30 30
+frame
+  tail_walk_b 3 11
+  leg_reach 33 43
+  leg_s 12 37
+  body_stretch 6 26
+  leg_s 9 37
+  leg_reach 37 43
+  head_turn 25 22
+  eyes_closed 30 30
+frame
+  tail_walk_a 3 15
+  leg_f 32 37
+  leg_s 12 37
+  body_lean 6 27
+  leg_f 29 37
+  leg_s 9 37
+  head_turn 24 16
+  eyes_half 29 24
+frame
+  tail_walk_a 3 15
+  leg_s 32 37
+  leg_ext 4 38 fh
+  body_walk 6 28
+  leg_s 29 37
+  leg_s 12 37
+  head_turn 24 11
+  eyes_closed 29 19
+frame
+  tail_walk_b 3 14
+  leg_s 32 37
+  leg_ext 3 38 fh
+  body_walk 6 28
+  leg_s 29 37
+  leg_s 12 37
+  head_turn 24 11
+  eyes_closed 29 19
+frame
+  tail_walk_a 3 15
+  leg_s 32 37
+  leg_ext 4 38 fh
+  body_walk 6 28
+  leg_s 29 37
+  leg_s 12 37
+  head_turn 24 12
+  eyes_half 29 20
+frame
+  tail_walk_a 3 17
+  leg_s 32 37
+  leg_s 12 37
+  body_walk 6 28
+  leg_s 29 37
+  leg_s 9 37
+  head_turn 24 12
+  eyes_open 29 20
+
+# Claude Code needs you: a startled little jump, then sitting tall with the tail straight up like a "?"
+anim alert 8 noloop
+frame
+  tail_up 32 11
+  body_sit 11 23
+  head_front 12 5
+  eyes_open 15 13
+frame
+  tail_up 32 10
+  body_sit 11 22
+  head_front 12 4
+  eyes_open 15 12
+frame
+  tail_up 32 12
+  body_sit 11 24
+  head_front 12 6
+  eyes_open 15 14
+frame
+  tail_up 32 13
+  body_sit 11 25
+  head_front 12 7
+  eyes_open 15 15

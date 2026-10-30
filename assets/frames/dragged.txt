@@ -1,0 +1,19 @@
+# Held by the scruff: head fixed at the top, everything below sways 1px.
+
+group hanging
+  tail_hang 22 32
+  leg_s 17 31
+  leg_s 26 31
+  body_hang 16 17
+  leg_hang_w 19 22
+  leg_hang_w 24 22
+
+anim dragged_limp 3
+frame
+  hanging 0 0
+  head_front 13 1
+  eyes_half 16 9
+frame
+  hanging 1 0
+  head_front 13 1
+  eyes_half 16 9

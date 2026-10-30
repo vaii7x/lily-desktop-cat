@@ -42,3 +42,8 @@ Lily never connects to the internet and collects nothing. She counts key presses
 records which keys you press. Her settings stay on your PC in `%APPDATA%\Lily`.
 
 Windows 10 or 11 (64-bit). MIT License.
+
+## For developers
+
+The full source code is in this repo (Electron, plain JavaScript). See [DEVELOPING.md](DEVELOPING.md) to run it
+from source, run the tests, or build the installer yourself.

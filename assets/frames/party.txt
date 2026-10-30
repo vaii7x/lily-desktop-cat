@@ -1,0 +1,104 @@
+# Welcome-back celebrations (Phase 4).
+
+# happy hop: crouch, jump 6px, land
+anim happy_hop 10
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 8
+  eyes_happy 15 16
+frame
+  tail_sit_a 31 25
+  body_sit 11 22
+  head_front 12 4
+  eyes_happy 15 12
+frame
+  tail_sit_a 31 22
+  body_sit 11 19
+  head_front 12 1
+  eyes_happy 15 9
+frame
+  tail_sit_b 31 22
+  body_sit 11 19
+  head_front 12 1
+  eyes_happy 15 9
+frame
+  tail_sit_b 31 25
+  body_sit 11 22
+  head_front 12 4
+  eyes_happy 15 12
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 8
+  eyes_happy 15 16
+
+# running (zoomies): stretched out, then gathered under her
+anim run 12
+frame
+  tail_walk_b 3 16
+  leg_ext 4 38 fh
+  leg_ext 30 38
+  body_walk 6 28
+  leg_ext 7 38 fh
+  leg_ext 33 38
+  head_turn 24 12
+  eyes_open 29 20
+frame
+  tail_walk_a 3 17
+  leg_up 32 37
+  leg_f 12 37
+  body_walk 6 28
+  leg_f 29 37
+  leg_up 9 37
+  head_turn 24 12
+  eyes_open 29 20
+frame
+  tail_walk_a 3 15
+  leg_f 13 37
+  leg_k 24 37
+  body_walk 6 27
+  leg_f 16 37
+  leg_k 27 37
+  head_turn 24 11
+  eyes_open 29 19
+frame
+  tail_walk_a 3 17
+  leg_up 32 37
+  leg_f 12 37
+  body_walk 6 28
+  leg_f 29 37
+  leg_up 9 37
+  head_turn 24 12
+  eyes_open 29 20
+
+# chasing her tail: right side, front, left side, front
+anim spin 12
+frame
+  tail_walk_a 3 17
+  leg_up 32 37
+  leg_f 12 37
+  body_walk 6 28
+  leg_f 29 37
+  leg_up 9 37
+  head_turn 24 12
+  eyes_open 29 20
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_happy 15 15
+frame
+  tail_walk_a 38 17 fh
+  leg_up 12 37 fh
+  leg_f 32 37 fh
+  body_walk 12 28 fh
+  leg_f 15 37 fh
+  leg_up 35 37 fh
+  head_turn 2 12 fh
+  eyes_open 3 20 fh
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_blink 15 15

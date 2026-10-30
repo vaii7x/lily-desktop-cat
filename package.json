@@ -1,0 +1,72 @@
+{
+  "name": "lily",
+  "version": "1.0.0",
+  "description": "A tiny local pixel cat for your Windows desktop.",
+  "main": "src/main/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "sprites:build": "node tools/build-sprites.js",
+    "sprites:preview": "node tools/preview-sprites.js",
+    "dist": "electron-builder --win",
+    "icon:build": "node tools/build-icon.js"
+  },
+  "devDependencies": {
+    "electron": "45.1.0",
+    "electron-builder": "26.18.0",
+    "pngjs": "7.0.0"
+  },
+  "dependencies": {
+    "koffi": "3.3.3",
+    "uiohook-napi": "1.5.5"
+  },
+  "author": "Vaishnav Vinod",
+  "license": "MIT",
+  "build": {
+    "appId": "dev.lily.desktopcat",
+    "productName": "Lily",
+    "copyright": "Copyright (c) 2026 Vaishnav Vinod",
+    "npmRebuild": false,
+    "files": [
+      "src/**/*",
+      "assets/build/**/*",
+      "package.json",
+      "LICENSE",
+      "!node_modules/uiohook-napi/{src,libuiohook,binding.gyp}",
+      "!node_modules/uiohook-napi/prebuilds/{darwin,linux,win32-arm}*/**"
+    ],
+    "asarUnpack": [
+      "**/*.node"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "artifactName": "Lily-Setup.${ext}",
+      "shortcutName": "Lily",
+      "deleteAppDataOnUninstall": false,
+      "createDesktopShortcut": "always",
+      "runAfterFinish": true
+    },
+    "portable": {
+      "artifactName": "Lily-Portable.${ext}"
+    }
+  }
+}

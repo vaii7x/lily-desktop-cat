@@ -1,0 +1,127 @@
+# Eye pairs, 16x6. Transparent cells let the head fur show through.
+
+@eyes_open noline
+.OOO........OOO.
+OHEEO......OHEEO
+OEKEO......OEKEO
+OEKEO......OEKEO
+OEEEO......OEEEO
+.OOO........OOO.
+
+@eyes_half noline
+................
+................
+OOOOO......OOOOO
+OEKEO......OEKEO
+OEEEO......OEEEO
+.OOO........OOO.
+
+@eyes_blink noline
+................
+................
+................
+OOOOO......OOOOO
+................
+................
+
+@eyes_closed noline
+................
+................
+................
+O...O......O...O
+.OOO........OOO.
+................
+
+@eyes_happy noline
+................
+................
+.OOO........OOO.
+O...O......O...O
+................
+................
+
+@eyes_look_l noline
+.OOO........OOO.
+OHEEO......OHEEO
+OKEEO......OKEEO
+OKEEO......OKEEO
+OEEEO......OEEEO
+.OOO........OOO.
+
+@eyes_look_r noline
+.OOO........OOO.
+OHEEO......OHEEO
+OEEKO......OEEKO
+OEEKO......OEEKO
+OEEEO......OEEEO
+.OOO........OOO.
+
+@eyes_look_u noline
+.OOO........OOO.
+OHKEO......OHKEO
+OEKEO......OEKEO
+OEEEO......OEEEO
+OEEEO......OEEEO
+.OOO........OOO.
+
+@eyes_look_d noline
+.OOO........OOO.
+OHEEO......OHEEO
+OEEEO......OEEEO
+OEKEO......OEKEO
+OEKEO......OEKEO
+.OOO........OOO.
+
+@blush noline
+.NN..........NN.
+
+# diagonals (pupil in a corner of the 3x4 iris)
+@eyes_look_ul noline
+.OOO........OOO.
+OKHEO......OKHEO
+OKEEO......OKEEO
+OEEEO......OEEEO
+OEEEO......OEEEO
+.OOO........OOO.
+
+@eyes_look_ur noline
+.OOO........OOO.
+OHEKO......OHEKO
+OEEKO......OEEKO
+OEEEO......OEEEO
+OEEEO......OEEEO
+.OOO........OOO.
+
+@eyes_look_dl noline
+.OOO........OOO.
+OHEEO......OHEEO
+OEEEO......OEEEO
+OKEEO......OKEEO
+OKEEO......OKEEO
+.OOO........OOO.
+
+@eyes_look_dr noline
+.OOO........OOO.
+OHEEO......OHEEO
+OEEEO......OEEEO
+OEEKO......OEEKO
+OEEKO......OEEKO
+.OOO........OOO.
+
+# squeezed shut with effort (typing fast)
+@eyes_squint noline
+................
+O..............O
+.OO..........OO.
+...O........O...
+.OO..........OO.
+O..............O
+
+# grumpy: lids slant down toward the nose
+@eyes_grumpy noline
+OO............OO
+.OOOO......OOOO.
+OEKEO......OEKEO
+OEEEO......OEEEO
+.OOO........OOO.
+................

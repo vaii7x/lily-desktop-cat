@@ -1,0 +1,47 @@
+# Resting poses: loaf, curled nap.
+
+anim loaf_idle 3
+frame
+  body_loaf 3 32
+  tail_loaf_a 4 44
+  head_front 22 22
+  eyes_half 25 30
+  paws_loaf 28 39
+frame
+  body_loaf 3 32
+  tail_loaf_b 4 43
+  head_front 22 22
+  eyes_half 25 30
+  paws_loaf 28 39
+frame
+  body_loaf 3 32
+  tail_loaf_a 4 44
+  head_front 22 22
+  eyes_blink 25 30
+  paws_loaf 28 39
+frame
+  body_loaf 3 32
+  tail_loaf_a 4 44
+  head_front 22 22
+  eyes_half 25 30
+  paws_loaf 28 39
+
+# breathing: everything but the tail rises 1px on frames 3-4. Her chin rests on top of the tail.
+group curled
+  body_ball 4 32
+  head_front 21 25
+  eyes_closed 24 33
+
+anim nap_curled 2
+frame
+  curled 0 0
+  tail_curl 4 44
+frame
+  curled 0 0
+  tail_curl 4 44
+frame
+  curled 0 -1
+  tail_curl 4 44
+frame
+  curled 0 -1
+  tail_curl 4 44

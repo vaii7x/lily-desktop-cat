@@ -1,0 +1,59 @@
+# Side-view trot. Diagonal leg pairs move together:
+# near-front + far-back: f s k up up f    far-front + near-back: up up f f s k
+# Draw order: tail, far legs, body, near legs, head, eyes.
+
+anim walk 8
+frame
+  tail_walk_a 3 17
+  leg_up 32 37
+  leg_f 12 37
+  body_walk 6 28
+  leg_f 29 37
+  leg_up 9 37
+  head_turn 24 12
+  eyes_open 29 20
+frame
+  tail_walk_a 3 16
+  leg_up 32 37
+  leg_s 12 37
+  body_walk 6 27
+  leg_s 29 37
+  leg_up 9 37
+  head_turn 24 11
+  eyes_open 29 19
+frame
+  tail_walk_a 3 17
+  leg_f 32 37
+  leg_k 12 37
+  body_walk 6 28
+  leg_k 29 37
+  leg_f 9 37
+  head_turn 24 12
+  eyes_open 29 20
+frame
+  tail_walk_b 3 17
+  leg_f 32 37
+  leg_up 12 37
+  body_walk 6 28
+  leg_up 29 37
+  leg_f 9 37
+  head_turn 24 12
+  eyes_open 29 20
+frame
+  tail_walk_b 3 16
+  leg_s 32 37
+  leg_up 12 37
+  body_walk 6 27
+  leg_up 29 37
+  leg_s 9 37
+  head_turn 24 11
+  eyes_open 29 19
+frame
+  tail_walk_b 3 17
+  leg_k 32 37
+  leg_f 12 37
+  body_walk 6 28
+  leg_f 29 37
+  leg_k 9 37
+  head_turn 24 12
+  eyes_open 29 20

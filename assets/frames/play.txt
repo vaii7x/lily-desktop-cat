@@ -1,0 +1,144 @@
+# Playful things she does on her own (user request: more than sitting and napping).
+
+# batting at a bug only she can see: looks up and swipes a front paw at it
+anim bat_paw 6
+frame
+  tail_sit_a 31 28
+  body_groom 11 25
+  head_front 12 7
+  eyes_look_ul 15 15
+  paw_lick 11 21
+frame
+  tail_sit_b 31 28
+  body_groom 11 25
+  head_front 12 7
+  eyes_look_ul 15 15
+  paw_lick 10 17
+frame
+  tail_sit_c 31 28
+  body_groom 11 25
+  head_front 12 7
+  eyes_look_ul 15 15
+  paw_lick 8 13
+frame
+  tail_sit_b 31 28
+  body_groom 11 25
+  head_front 12 7
+  eyes_look_ul 15 15
+  paw_lick 10 17
+
+# watching her own tail swish, eyes following it
+anim tail_watch 5
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_dr 15 15
+frame
+  tail_sit_b 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_dr 15 15
+frame
+  tail_sit_c 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_r 15 15
+frame
+  tail_sit_b 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_dr 15 15
+
+# hunting: crouch low with a wiggling tail, then pounce on the spot and land
+anim pounce 8 noloop
+frame
+  tail_walk_a 3 15
+  leg_f 32 37
+  leg_s 12 37
+  body_lean 6 27
+  leg_f 29 37
+  leg_s 9 37
+  head_turn 24 16
+  eyes_open 29 24
+frame
+  tail_walk_b 3 13
+  leg_f 32 37
+  leg_s 12 37
+  body_lean 6 27
+  leg_f 29 37
+  leg_s 9 37
+  head_turn 24 16
+  eyes_open 29 24
+frame
+  tail_walk_a 3 15
+  leg_f 32 37
+  leg_s 12 37
+  body_lean 6 27
+  leg_f 29 37
+  leg_s 9 37
+  head_turn 24 16
+  eyes_open 29 24
+frame
+  tail_walk_b 3 13
+  leg_f 32 37
+  leg_s 12 37
+  body_lean 6 27
+  leg_f 29 37
+  leg_s 9 37
+  head_turn 24 16
+  eyes_open 29 24
+frame
+  tail_walk_a 3 15
+  leg_f 32 37
+  leg_s 12 37
+  body_lean 6 27
+  leg_f 29 37
+  leg_s 9 37
+  head_turn 24 16
+  eyes_open 29 24
+frame
+  tail_walk_b 3 11
+  leg_ext 4 33 fh
+  leg_ext 30 33
+  body_walk 6 23
+  leg_ext 7 33 fh
+  leg_ext 33 33
+  head_turn 24 7
+  eyes_open 29 15
+frame
+  tail_walk_b 3 9
+  leg_ext 4 31 fh
+  leg_ext 31 31
+  body_walk 7 21
+  leg_ext 7 31 fh
+  leg_ext 34 31
+  head_turn 25 5
+  eyes_open 30 13
+frame
+  tail_walk_a 3 15
+  leg_f 13 37
+  leg_k 24 37
+  body_walk 6 27
+  leg_f 16 37
+  leg_k 27 37
+  head_turn 24 11
+  eyes_open 29 19
+frame
+  tail_walk_a 3 17
+  leg_s 32 37
+  leg_s 12 37
+  body_walk 6 28
+  leg_s 29 37
+  leg_s 9 37
+  head_turn 24 12
+  eyes_happy 29 20
+frame
+  tail_walk_b 3 16
+  leg_s 32 37
+  leg_s 12 37
+  body_walk 6 28
+  leg_s 29 37
+  leg_s 9 37
+  head_turn 24 12
+  eyes_happy 29 20

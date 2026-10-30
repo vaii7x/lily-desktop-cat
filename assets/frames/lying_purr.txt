@@ -1,0 +1,45 @@
+# Being petted while lying down: happy eyes, blush, a little purr bob. Poses match rest.txt.
+
+anim loaf_purr 6
+frame
+  body_loaf 3 32
+  tail_loaf_a 4 44
+  head_front 22 22
+  eyes_happy 25 30
+  blush 25 36
+  paws_loaf 28 39
+frame
+  body_loaf 3 32
+  tail_loaf_b 4 43
+  head_front 22 23
+  eyes_happy 25 31
+  blush 25 37
+  paws_loaf 28 39
+frame
+  body_loaf 3 32
+  tail_loaf_a 4 44
+  head_front 22 22
+  eyes_happy 25 30
+  blush 25 36
+  paws_loaf 28 39
+frame
+  body_loaf 3 32
+  tail_loaf_b 4 43
+  head_front 22 23
+  eyes_happy 25 31
+  blush 25 37
+  paws_loaf 28 39
+
+anim curl_purr 4
+frame
+  body_ball 4 32
+  head_front 21 25
+  eyes_happy 24 33
+  blush 24 39
+  tail_curl 4 44
+frame
+  body_ball 4 31
+  head_front 21 24
+  eyes_happy 24 32
+  blush 24 38
+  tail_curl 4 44

@@ -1,0 +1,144 @@
+# Sitting poses. Head 22x19 at (12,7); eyes at head + (3,8).
+
+anim idle_sit 4
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_open 15 15
+frame
+  tail_sit_b 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_open 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_open 15 15
+frame
+  tail_sit_c 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_blink 15 15
+
+# Watching the cursor: 18 poses, picked in src/shared/behaviorRules.js (watchFrame).
+# 0-8: eyes only (cursor near), 9-17: head turns 1px too (cursor far). Each set is a 3x3 grid,
+# row-major: up / middle / down rows, left / centre / right columns; 4 and 13 look straight ahead.
+anim watch 1 noloop
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_ul 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_u 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_ur 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_l 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_open 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_r 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_dl 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_d 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_look_dr 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 11 6
+  eyes_look_ul 14 14
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 6
+  eyes_look_u 15 14
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 13 6
+  eyes_look_ur 16 14
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 11 7
+  eyes_look_l 14 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_open 15 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 13 7
+  eyes_look_r 16 15
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 11 8
+  eyes_look_dl 14 16
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 8
+  eyes_look_d 15 16
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 13 8
+  eyes_look_dr 16 16
+
+anim pet_purr 6
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_happy 15 15
+  blush 15 21
+frame
+  tail_sit_b 31 28
+  body_sit 11 25
+  head_front 12 8
+  eyes_happy 15 16
+  blush 15 22
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 7
+  eyes_happy 15 15
+  blush 15 21
+frame
+  tail_sit_c 31 28
+  body_sit 11 25
+  head_front 12 8
+  eyes_happy 15 16
+  blush 15 22

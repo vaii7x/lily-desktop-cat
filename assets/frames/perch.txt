@@ -1,0 +1,33 @@
+# Perching (Phase 7): dropping to the surface below, legs out and tail up, then a squashed landing.
+
+anim fall 6
+frame
+  tail_up 32 5
+  leg_ext 29 31
+  leg_ext 13 31 fh
+  body_hang 16 19
+  leg_reach 31 24
+  leg_reach 8 24 fh
+  head_front 13 3
+  eyes_open 16 11
+frame
+  tail_up 33 5
+  leg_ext 29 32
+  leg_ext 13 32 fh
+  body_hang 16 19
+  leg_reach 31 23
+  leg_reach 8 23 fh
+  head_front 13 3
+  eyes_open 16 11
+
+anim land 6 noloop
+frame
+  tail_sit_a 31 28
+  body_sit 11 25
+  head_front 12 10
+  eyes_squint 15 18
+frame
+  tail_sit_b 31 28
+  body_sit 11 25
+  head_front 12 8
+  eyes_open 15 16
